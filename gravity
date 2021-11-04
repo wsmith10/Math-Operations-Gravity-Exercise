@@ -15,7 +15,7 @@ frames = input("What is the number of frames? ")
 #Convert string to int
 frames = int(frames)
 #Calculate time object is falling
-time = FPS/frames
+time = frames/FPS
 #Calculate distance in pixels objecthas fallen
 distance = 1/2 * gravity * time ** 2
 #print("It will drop", distance, "pixels in", time, #"seconds") # Output time to user

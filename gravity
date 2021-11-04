@@ -1,0 +1,23 @@
+"""
+Guide: print("This program calculates the distance a suspended object falls","given a gravity and time")
+"""
+
+#Get gravity from user
+gravity = input("Give me gravity number in pixels/s2: ")
+#Convert string to int
+gravity = int(gravity)
+#Get fps from user
+FPS = input("What's the game's FPS? ")
+#Convert string to int
+FPS = int(FPS)
+#Get number of frames from user
+frames = input("What is the number of frames? ")
+#Convert string to int
+frames = int(frames)
+#Calculate time object is falling
+time = FPS/frames
+#Calculate distance in pixels objecthas fallen
+distance = 1/2 * gravity * time ** 2
+#print("It will drop", distance, "pixels in", time, #"seconds") # Output time to user
+print("It will drop", distance, "pixels in", time, "seconds")
+
